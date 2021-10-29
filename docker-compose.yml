@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  imgproxy:
+    ports:
+      - "8080:8080"
+    image: darthsim/imgproxy
