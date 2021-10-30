@@ -355,6 +355,8 @@ export class Imgproxy {
       return `${this.config.host}/${signature}/${url}`;
     }
 
+    this.settings = {};
+
     return `${this.config.host}/plain/${url}`;
   }
 }
