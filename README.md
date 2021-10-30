@@ -6,9 +6,9 @@ Additionally, it provides you with helper functions helping you generating sourc
 ## Documentation
 
 ```typescript
-import { Index } from "imgproxy-client";
+import { Imgproxy } from "imgproxy-client";
 
-const imgproxy = new Index({
+const imgproxy = new Imgproxy({
   host: "https://your.imgproxy.host",
   salt: "yourSalt",
   key: "yourKey",
