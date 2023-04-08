@@ -156,6 +156,7 @@ export class Imgproxy {
       height,
       enlarge,
       extend,
+      algorithm: ResizeAlgorithm.LANCZOS3
     };
 
     return this;
@@ -250,7 +251,7 @@ export class Imgproxy {
     if (this.settings.resize) {
       const { height = 0, width = 0, type = ResizeType.FIT, enlarge = false, extend = false } = this.settings.resize;
       url += `rs:${type}:${width}:${height}:${enlarge}:${extend}/`;
-      if (this.settings.resize.algorithm) {
+      if (this.settings.resize.algorithm !== ResizeAlgorithm.LANCZOS3) {
         url += `ra:${this.settings.resize.algorithm || ResizeAlgorithm.LANCZOS3}/`;
       }
     }
