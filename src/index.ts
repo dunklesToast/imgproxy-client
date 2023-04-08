@@ -250,8 +250,8 @@ export class Imgproxy {
     if (this.settings.resize) {
       const { height = 0, width = 0, type = ResizeType.FIT, enlarge = false, extend = false } = this.settings.resize;
       url += `rs:${type}:${width}:${height}:${enlarge}:${extend}/`;
-      if (this.settings.resize) {
-        url += `ra:${this.settings.resize.algorithm || ResizeAlgorithm.LANCZOS2}/`;
+      if (this.settings.resize.algorithm) {
+        url += `ra:${this.settings.resize.algorithm || ResizeAlgorithm.LANCZOS3}/`;
       }
     }
 

@@ -14,7 +14,7 @@
     "typescript": "4.8.4"
   },
   "name": "imgproxy-client",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A imgproxy client with features for the web",
   "main": "dist/index.js",
   "author": "Tom Sacher <me@dunklestoast.de>",

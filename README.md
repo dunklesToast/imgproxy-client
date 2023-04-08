@@ -15,7 +15,7 @@ const imgproxy = new Imgproxy({
   sourceSetSizes: [480, 560, 760, 1080],
 });
 
-imgproxy.width(512).dpr(10).generate("source_image_url");
+imgproxy.setWidth(512).setDpr(10).generate("source_image_url");
 imgproxy.getSourceSet("source_image_url", { quality: 10 });
 ```
 
