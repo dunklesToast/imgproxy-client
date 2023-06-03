@@ -156,7 +156,7 @@ export class Imgproxy {
       height,
       enlarge,
       extend,
-      algorithm: ResizeAlgorithm.LANCZOS3
+      algorithm: ResizeAlgorithm.LANCZOS3,
     };
 
     return this;
@@ -361,3 +361,5 @@ export class Imgproxy {
     return `${this.config.host}/plain/${url}`;
   }
 }
+
+export * from "./types/imgproxy.types";
